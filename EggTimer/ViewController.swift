@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func setTimerAndProgressBar(){
+    func setTimerAndProgressBar() {
         timer.invalidate()
         secondsRemaining = totalTime
         countdownLabel.text = String(secondsRemaining)
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         setTimerAndProgressBar()
     }
     
-    @IBAction func customTimeButtonPressed(_ sender: Any) {
+    @IBAction func customTimeButtonPressed(_ sender: UIButton) {
         hardness = "Custom"
         if let input = customTimeTextField.text, let time = Int(input) {
             totalTime = time
